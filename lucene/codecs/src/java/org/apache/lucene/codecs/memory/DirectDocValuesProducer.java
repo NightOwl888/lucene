@@ -52,7 +52,7 @@ class DirectDocValuesProducer extends DocValuesProducer {
   private final Map<Integer,BinaryEntry> binaries = new HashMap<>();
   private final Map<Integer,SortedEntry> sorteds = new HashMap<>();
   private final Map<Integer,SortedSetEntry> sortedSets = new HashMap<>();
-  private final IndexInput data;
+  private /*final*/ IndexInput data; // LUCENENET: No longer compiles on Java 8 with the final keyword here, so it was removed
   
   // ram instances we have already loaded
   private final Map<Integer,NumericDocValues> numericInstances = 

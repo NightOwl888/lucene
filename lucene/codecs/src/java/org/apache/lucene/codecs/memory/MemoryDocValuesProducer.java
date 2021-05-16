@@ -67,7 +67,7 @@ class MemoryDocValuesProducer extends DocValuesProducer {
   private final Map<Integer,NumericEntry> numerics;
   private final Map<Integer,BinaryEntry> binaries;
   private final Map<Integer,FSTEntry> fsts;
-  private final IndexInput data;
+  private /*final*/ IndexInput data; // LUCENENET: No longer compiles on Java 8 with the final keyword here, so it was removed
   
   // ram instances we have already loaded
   private final Map<Integer,NumericDocValues> numericInstances = 
