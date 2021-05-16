@@ -66,7 +66,7 @@ if (defined($version)) {
   }
   $label = $version;
   $apache_url_suffix = "lucene/java/$version/changes/Changes.html";
-  $maven_url = "http://repo1.maven.org/maven2/org/apache/lucene/lucene-core/$version/lucene-core-$version.pom.asc";
+  $maven_url = "https://repo1.maven.org/maven2/org/apache/lucene/lucene-core/$version/lucene-core-$version.pom.asc";
 } else {
   # path based
   $apache_url_suffix = $label = $rel_path;

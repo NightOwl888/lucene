@@ -73,7 +73,7 @@ class Lucene45DocValuesProducer extends DocValuesProducer implements Closeable {
   private final Map<Integer,NumericEntry> ords;
   private final Map<Integer,NumericEntry> ordIndexes;
   private final AtomicLong ramBytesUsed;
-  private final IndexInput data;
+  private /*final*/ IndexInput data; // LUCENENET: No longer compiles on Java 8 with the final keyword here, so it was removed
   private final int maxDoc;
   private final int version;
   
