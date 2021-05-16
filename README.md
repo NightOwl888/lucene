@@ -24,6 +24,9 @@ Apache Solr is an enterprise search platform written using Apache Lucene.
 Major features include full-text search, index replication and sharding, and
 result faceting and highlighting.
 
+> NOTE: This is the original 7.x version, but the ivy/maven settings
+have been patched so it will build, since many URLs no longer function.
+
 ## Online Documentation
 
 This README file only contains basic setup instructions.  For more
