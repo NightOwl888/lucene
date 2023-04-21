@@ -391,7 +391,7 @@
   <property name="ivy_bootstrap_url1" value="https://repo1.maven.org/maven2"/>
   <!-- you might need to tweak this from china so it works -->
   <property name="ivy_bootstrap_url2" value="http://uk.maven.org/maven2"/>
-  <property name="ivy_checksum_sha1" value="c498330bfd2612895c09bc2719c3beb5d320558a"/>
+  <property name="ivy_checksum_sha1" value="7fac35f24f89776e7b78ec98658d8bc8f22f7e89"/>
 
   <target name="ivy-availability-check" unless="ivy.available">
     <condition property="ivy.available">
