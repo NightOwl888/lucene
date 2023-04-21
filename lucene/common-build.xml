@@ -80,7 +80,7 @@
   <!-- Needed in case a module needs the original build, also for compile-tools to be called from a module -->
   <property name="common.build.dir" location="${common.dir}/build"/>
 
-  <property name="ivy.bootstrap.version" value="2.3.0" /> <!-- UPGRADE NOTE: update disallowed.ivy.jars regex in ivy-availability-check -->
+  <property name="ivy.bootstrap.version" value="2.4.0" /> <!-- UPGRADE NOTE: update disallowed.ivy.jars regex in ivy-availability-check -->
   <property name="ivy.default.configuration" value="*"/>
 
   <!-- Running ant targets in parralel may require this set to false because ivy:retrieve tasks may race with resolve -->
@@ -418,7 +418,7 @@
   <target name="ivy-availability-check" unless="ivy.available">
     <path id="disallowed.ivy.jars">
       <fileset dir="${ivy_install_path}">
-        <filename regex="ivy-2\.[012].*\.jar"/> <!-- TODO: Update this regex to disallow Ivy versions -->
+        <filename regex="ivy-2\.[0123].*\.jar"/> <!-- TODO: Update this regex to disallow Ivy versions -->
       </fileset>
     </path>
     <loadresource property="disallowed.ivy.jars.list">
